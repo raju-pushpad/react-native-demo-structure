@@ -10,7 +10,6 @@ import {
 import { connect } from 'react-redux';
 import {userLogin} from '../../actions/user'
 import appStyle from '../style/appStyle' 
-import Image from 'react-native-remote-svg';
 
 class Login extends Component {
   constructor(props){
@@ -73,16 +72,7 @@ class Login extends Component {
           <View style={[appStyle.subContainer,{marginTop: 70}]}>
             
             <Text style={appStyle.welcome}>Login Screen</Text>
-              <Image
-  source={{
-    uri: `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px"  viewBox="0 0 100 100">
-      <ellipse data-custom-shape="ellipse" cx="50" cy="50" rx="50" ry="50" fill="green"  stroke="#00FF00" stroke-width ="2" />
-    </svg>`,
-  }}
-  style={{ width: 100, height: 100 }}
-/>
-          
-
+           
             <View style={appStyle.textInputContainer}>
               
               <TextInput
